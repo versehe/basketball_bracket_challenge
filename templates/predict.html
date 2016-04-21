@@ -1,0 +1,164 @@
+<!doctype html>
+
+<title>Bracket Challenge Predictor</title>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $("button").click(function(){
+          target = $("#team1").val() + "/" + $("#team2").val()
+          $("#div1").load("predict/" + target);
+      });
+});
+</script>
+</head>
+<meta charset=utf-8>
+
+<body>
+
+
+
+<select id="team1">
+  <option value='Kansas'>Kansas</option>
+<option value='North_Carolina'>North Carolina</option>
+<option value='Virginia'>Virginia</option>
+<option value='Michigan_State'>Michigan State</option>
+<option value='Oklahoma'>Oklahoma</option>
+<option value='Villanova'>Villanova</option>
+<option value='Kentucky'>Kentucky</option>
+<option value='West_Virginia'>West Virginia</option>
+<option value='Purdue'>Purdue</option>
+<option value='Oregon'>Oregon</option>
+<option value='Texas_A&M'>Texas A&#38;M</option>
+<option value='Xavier'>Xavier</option>
+<option value='Arizona'>Arizona</option>
+<option value='Duke'>Duke</option>
+<option value='Maryland'>Maryland</option>
+<option value='Indiana'>Indiana</option>
+<option value='Miami_(Fla.)'>Miami (Fla.)</option>
+<option value='Iowa_State'>Iowa State</option>
+<option value='Baylor'>Baylor</option>
+<option value='Texas'>Texas</option>
+<option value='Utah'>Utah</option>
+<option value='Wichita_State'>Wichita State</option>
+<option value='California'>California</option>
+<option value='Iowa'>Iowa</option>
+<option value='Vanderbilt'>Vanderbilt</option>
+<option value='Gonzaga'>Gonzaga</option>
+<option value='Wisconsin'>Wisconsin</option>
+<option value='Notre_Dame'>Notre Dame</option>
+<option value='Connecticut'>Connecticut</option>
+<option value='Cincinnati'>Cincinnati</option>
+<option value='Butler'>Butler</option>
+<option value='Seton_Hall'>Seton Hall</option>
+<option value='VCU'>VCU</option>
+<option value='Dayton'>Dayton</option>
+<option value='Syracuse'>Syracuse</option>
+<option value='Pittsburgh'>Pittsburgh</option>
+<option value='Saint_Joseph''s'>Saint Joseph's</option>
+<option value='Providence'>Providence</option>
+<option value='Northern_Iowa'>Northern Iowa</option>
+<option value='Stephen_F._Austin'>Stephen F. Austin</option>
+<option value='Colorado'>Colorado</option>
+<option value='Yale'>Yale</option>
+<option value='Texas_Tech'>Texas Tech</option>
+<option value='Tulsa'>Tulsa</option>
+<option value='Michigan'>Michigan</option>
+<option value='Southern_California'>Southern California</option>
+<option value='Little_Rock'>Little Rock</option>
+<option value='South_Dakota_State'>South Dakota State</option>
+<option value='Temple'>Temple</option>
+<option value='NC-Wilmington'>NC-Wilmington</option>
+<option value='Oregon_State'>Oregon State</option>
+<option value='Iona'>Iona</option>
+<option value='Green_Bay'>Green Bay</option>
+<option value='Stony_Brook'>Stony Brook</option>
+<option value='Chattanooga'>Chattanooga</option>
+<option value='Hawaii'>Hawaii</option>
+<option value='Fresno_State'>Fresno State</option>
+<option value='Buffalo'>Buffalo</option>
+<option value='Cal_State_Bakersfield'>Cal State Bakersfield</option>
+<option value='Middle_Tennessee'>Middle Tennessee</option>
+<option value='NC-Asheville'>NC-Asheville</option>
+<option value='Weber_State'>Weber State</option>
+<option value='Florida_Gulf_Coast'>Florida Gulf Coast</option>
+<option value='Southern'>Southern</option>
+<option value='Austin_Peay'>Austin Peay</option>
+<option value='Hampton'>Hampton</option>
+<option value='Holy_Cross'>Holy Cross</option>
+<option value='Fairleigh_Dickinson'>Fairleigh Dickinson</option>
+</select>
+<select id="team2">
+
+    <option value='Kansas'>Kansas</option>
+  <option value='North_Carolina'>North Carolina</option>
+  <option value='Virginia'>Virginia</option>
+  <option value='Michigan_State'>Michigan State</option>
+  <option value='Oklahoma'>Oklahoma</option>
+  <option value='Villanova'>Villanova</option>
+  <option value='Kentucky'>Kentucky</option>
+  <option value='West_Virginia'>West Virginia</option>
+  <option value='Purdue'>Purdue</option>
+  <option value='Oregon'>Oregon</option>
+  <option value='Texas_A&M'>Texas A&#38;M</option>
+  <option value='Xavier'>Xavier</option>
+  <option value='Arizona'>Arizona</option>
+  <option value='Duke'>Duke</option>
+  <option value='Maryland'>Maryland</option>
+  <option value='Indiana'>Indiana</option>
+  <option value='Miami_(Fla.)'>Miami (Fla.)</option>
+  <option value='Iowa_State'>Iowa State</option>
+  <option value='Baylor'>Baylor</option>
+  <option value='Texas'>Texas</option>
+  <option value='Utah'>Utah</option>
+  <option value='Wichita_State'>Wichita State</option>
+  <option value='California'>California</option>
+  <option value='Iowa'>Iowa</option>
+  <option value='Vanderbilt'>Vanderbilt</option>
+  <option value='Gonzaga'>Gonzaga</option>
+  <option value='Wisconsin'>Wisconsin</option>
+  <option value='Notre_Dame'>Notre Dame</option>
+  <option value='Connecticut'>Connecticut</option>
+  <option value='Cincinnati'>Cincinnati</option>
+  <option value='Butler'>Butler</option>
+  <option value='Seton_Hall'>Seton Hall</option>
+  <option value='VCU'>VCU</option>
+  <option value='Dayton'>Dayton</option>
+  <option value='Syracuse'>Syracuse</option>
+  <option value='Pittsburgh'>Pittsburgh</option>
+  <option value='Saint_Joseph''s'>Saint Joseph's</option>
+  <option value='Providence'>Providence</option>
+  <option value='Northern_Iowa'>Northern Iowa</option>
+  <option value='Stephen_F._Austin'>Stephen F. Austin</option>
+  <option value='Colorado'>Colorado</option>
+  <option value='Yale'>Yale</option>
+  <option value='Texas_Tech'>Texas Tech</option>
+  <option value='Tulsa'>Tulsa</option>
+  <option value='Michigan'>Michigan</option>
+  <option value='Southern_California'>Southern California</option>
+  <option value='Little_Rock'>Little Rock</option>
+  <option value='South_Dakota_State'>South Dakota State</option>
+  <option value='Temple'>Temple</option>
+  <option value='NC-Wilmington'>NC-Wilmington</option>
+  <option value='Oregon_State'>Oregon State</option>
+  <option value='Iona'>Iona</option>
+  <option value='Green_Bay'>Green Bay</option>
+  <option value='Stony_Brook'>Stony Brook</option>
+  <option value='Chattanooga'>Chattanooga</option>
+  <option value='Hawaii'>Hawaii</option>
+  <option value='Fresno_State'>Fresno State</option>
+  <option value='Buffalo'>Buffalo</option>
+  <option value='Cal_State_Bakersfield'>Cal State Bakersfield</option>
+  <option value='Middle_Tennessee'>Middle Tennessee</option>
+  <option value='NC-Asheville'>NC-Asheville</option>
+  <option value='Weber_State'>Weber State</option>
+  <option value='Florida_Gulf_Coast'>Florida Gulf Coast</option>
+  <option value='Southern'>Southern</option>
+  <option value='Austin_Peay'>Austin Peay</option>
+  <option value='Hampton'>Hampton</option>
+  <option value='Holy_Cross'>Holy Cross</option>
+  <option value='Fairleigh_Dickinson'>Fairleigh Dickinson</option>
+</select>
+<button>Predict</button>
+<p><div id="div1"></div></p>
+<body>
